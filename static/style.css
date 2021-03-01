@@ -1,0 +1,32 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    margin: 0.3rem 0;
+}
+
+.grupoderisco input, .dosevacina input{
+    margin: 1rem;
+    width: 0.9rem;
+}
+
+input[type="text"], select {
+    margin: 0.5rem 0;
+    height: 1.5rem;
+    width: 450px;
+}
+

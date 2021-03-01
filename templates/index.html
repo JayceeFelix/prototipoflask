@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="formulario">
+        <h2>Registro de vacinação contra Covid-19 em Fortaleza - Ce</h2>
+        <form action="#" name="formularioPrincipal" method="POST">
+            <label for="nomeompleto">Nome completo: </label>
+            <input type="text" id="nomeCompleto" name="nomecompleto" required>
+
+            <div class="grupoderisco">
+                <h5>Grupo de Vacinação</h5>
+                <input type="radio" name="grupo"  value="profissionaldesaude">
+                <label for="profissionalDeSaude">Profissional de Saúde</label>
+                <input type="radio" name="grupo" value="mais65">
+                <label for="mais65">+65 anos</label>
+                <input type="radio" name="grupo" value="mais75">
+                <label for="mais75">+75 anos</label>
+                <input type="radio" name="grupo" value="mais85">
+                <label for="mais85">+85 anos</label>
+
+            </div>
+
+            <label for="regional">Regional</label>
+            <select id="regional" name="regional">
+                <option value="regional1">Regional I</option>
+                <option value="regional2">Regional II</option>
+                <option value="regional3">Regional III</option>
+                <option value="regional4">Regional IV</option>
+                <option value="regional5">Regional V</option>
+                <option value="regional6">Regional VI</option>
+                <option value="regional7">Regional VII</option>
+            </select>
+
+            <div class="dosevacina">
+                <h5>Dose de Vacinação</h5>
+                <input type="radio" name="dose" id="primeiraDose" value="primeiraDose">
+                <label for="primeiraDose">Primeira dose</label>
+                <input type="radio" name="dose" id="segundaDose" value="segundaDose">
+                <label for="segundaDose">Segunda dose</label>
+
+            </div>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+</body>
+
+</html>
